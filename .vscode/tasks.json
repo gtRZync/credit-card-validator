@@ -1,0 +1,42 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+	  {
+		"label": "Compile ValidateCB.cpp",
+		"type": "shell",
+		"command": "g++",
+		"args": [
+		  "./src/ValidateCB.cpp",
+		  "-c",
+		  "-Iheader",
+		  "-o",
+		  "./obj/ValidateCB.o"
+		],
+		"group": {
+		  "kind": "build",
+		  "isDefault": true
+		},
+		"problemMatcher": ["$gcc"],
+		"detail": "Compiles ValidateCB.cpp into object file."
+	  },
+	  {
+		"label": "Link main.cpp and ValidateCB.o",
+		"type": "shell",
+		"command": "g++",
+		"args": [
+		  "./src/main.cpp",
+		  "./obj/ValidateCB.o",
+		  "-Iheader",
+		  "-o",
+		  "./bin/main.exe"
+		],
+		"group": {
+		  "kind": "build",
+		  "isDefault": false
+		},
+		"problemMatcher": ["$gcc"],
+		"detail": "Links main.cpp and ValidateCB.o to create the executable."
+	  }
+	]
+  }
+  
