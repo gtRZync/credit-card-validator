@@ -17,7 +17,7 @@ To run the credit card validator on your local machine, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/credit-card-validator.git
+   git clone [https://github.com/your-username/credit-card-validator.git](https://github.com/gtRZync/credit-card-validator.git)
    ```
 
 2. Navigate into the project folder:
