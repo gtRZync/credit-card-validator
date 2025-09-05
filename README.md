@@ -13,33 +13,28 @@ The Luhn algorithm is used to validate various identification numbers, especiall
 
 ## Installation
 
-To run the credit card validator on your local machine, follow these steps:
+### 1. Clone the repository:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/credit-card-validator.git
-   ```
+```bash
+git clone https://github.com/gtRZync/credit-card-validator.git
+```
 
-2. Navigate into the project folder:
-   ```bash
-   cd credit-card-validator
-   ```
+### 2. Navigate into the project folder:
 
-3. Compile the program:
-- Manually : 
-   ```bash
-   g++ .\src\ValidateCB.cpp -c -Iheader  -o obj/ValidateCB.o
-   g++ .\src\main.cpp .\obj\ValidateCB.o -Iheader -o  bin/main.exe
-   ```
-- or just compile it using the tasks.json (Ctrl + B in VScode) :
-    ```bash
-    Copy the tasks.json to your .vscode folder then press Ctrl + B
-    ```
+```bash
+cd credit-card-validator
+```
 
-4. Run the program:
-   ```bash
-   ./bin/main.exe
-   ```
+### 3. Build and run the program:
+
+```bash
+make run
+```
+
+> This will automatically compile the source files and run the program.
+> Make sure you have `make` and `g++` installed on your system or modify the makefile to use your desired compiler.
+
+---
 
 ## Usage
 
