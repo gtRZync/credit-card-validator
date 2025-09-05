@@ -11,14 +11,18 @@ class Luhn_Algorithm
         std::string cardNumber;
         const char CONVERTER = '0';
     private:
-        virtual const int sumEvenDigits() const;
-        virtual const int sumOddDigits() const;
+        int sumEvenDigits() const;
+        
+        int sumOddDigits() const;
     public:
-        virtual void isCardNumberValid();
-        virtual void isCardNumberValid(std::string CB_number);
+        void isCardNumberValid();
+
+        void isCardNumberValid(const std::string& CB_number);
     public:
         Luhn_Algorithm();
-        Luhn_Algorithm(std::string CB_number);
+
+        Luhn_Algorithm(const std::string& CB_number);
+
         virtual ~Luhn_Algorithm();
 };
 
